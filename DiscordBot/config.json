@@ -1,0 +1,16 @@
+{
+  "token": "", // توكن البوت
+  "categoryId": "", // الكاتيجوري ايدي
+  "ownerId": "", // ايدي الاونر
+  "probotId": "", // ايدي بوت البرو بوت
+  "invoicePath": "../Website/data.json", // مسار ملف الجيسون
+  "mysql": { // اعدادات اتصال الداتا بيس
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "elitesystem"
+  },
+  "webhookURL": "" // رابط الوق
+}
+
+  
