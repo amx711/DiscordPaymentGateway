@@ -1,0 +1,4 @@
+<Files "data.json">
+    Order Deny,Allow
+    Deny from all
+</Files>
