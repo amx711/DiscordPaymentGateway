@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html[dir="rtl"] .toast-box .message {
+    margin-right: 60px;
+}
+
+.toast-box {
+    z-index: 999999999;
+}
+
+.modal {
+    display: none;
+}
+
+body {
+    font-family: 'Readex Pro', serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "HEXP" 0;
+
+}
+
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+}
+
+.lang-selector:hover .lang-dropdown {
+    display: block;
+}
+
+.toggle-checkbox:checked {
+    right: 0;
+    border-color: #FF6B00;
+}
+
+.toggle-checkbox:checked+.toggle-label {
+    background-color: #FF6B00;
+}
+
+.main_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 9999999999;
+}
+
+.overlay_bulb {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: 0.15;
+}
+
+.overlay_bulb__LT {
+    top: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background-color: #FF6B00;
+}
+
+.overlay_bulb__RT {
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background-color: #8B5CF6;
+}
+
+.overlay_bulb__LB {
+    bottom: -200px;
+    left: -100px;
+    background-color: #6366F1;
+}
+
+.h2 {
+    font-family: 'Readex Pro', serif;
+}
+
+/* Animation classes */
+.animate-section {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger child animations */
+.stagger-children>* {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.stagger-children.show>* {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stagger-children.show>*:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.stagger-children.show>*:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.stagger-children.show>*:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.stagger-children.show>*:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.stagger-children.show>*:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.stagger-children.show>*:nth-child(6) {
+    transition-delay: 0.6s;
+}
+
+#invoiceContainer {
+    text-align: center;
+    padding: 20px;
+}
+
+#invoiceFrame {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+}
